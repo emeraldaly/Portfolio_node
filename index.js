@@ -14,8 +14,8 @@ app.get("/AboutMe", function(req, res) {
   res.sendFile(process.cwd() + "/views/AboutMe.html")
 });
 
-app.get("/blog", function(req, res  {
-  res.sendFile(process,cwd() } "/views/blog.html");
+app.get("/blog", function(req, res)  {
+  res.sendFile(process,cwd() + "/views/blog.html");
 });
 
 app.listen(PORT, function() {
