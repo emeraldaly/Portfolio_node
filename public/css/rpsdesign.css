@@ -1,0 +1,24 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-image: url("../images/crisp_paper_ruffles_@2x.png");
+  background-color: gray;
+}
+col-md-8 {
+  height: 800x;
+  width: 200x;
+  color: turquoise;
+}
+
+/*.pulse {
+  visibility: hidden;
+}*/
+.btn-primary {
+  height: 80px;
+  width: 80px;
+}
+button img {
+  height: 40px;
+}
+.navbar img {
+  height: 30px;
+}

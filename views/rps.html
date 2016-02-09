@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="design/css" href="../public/css/rpsdesign.css">
+    <!-- <link rel="stylesheet" type="animation/css" href="../public/css/animation.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="row">
+        <!--     <div class="col-md-4" id="rockWin">
+            <img src="../public/Images/rock.png" class="navBar" id="rock" alt="Rock">
+            <img src="../public/Images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+        <img src="../public/Images/scissorbreak.png" class="navBar" id="scissorlose" alt="scissorLose">
+            </div>
+            <div class="col-md-4" id="paperWin">
+            <img src="../public/Images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+            <img src="../public/Images/rock.png" class="navBar" id="rock" alt="Rock">
+            <img src="../public/Images/rockbroke.png" class="navBar" id="rocklose" alt="RockLose">
+            </div>
+            <div class="col-md-4" id="scissorWin">
+            <img src="../public/Images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+             <img src="../public/Images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+             <img src="../public/Images/paperrip.png" class="navBar" id="paperlose" alt="PaperLose">
+            </div> -->
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="container-fluid">  
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <button class="btn btn-success" id="startGame" type="submit">Start Game</button>
+                <button class="btn btn-danger" id="stopGame" type="submit">Stop Game</button>
+                <br />
+            </div>
+        </div>
+        <div class ="row">   
+            <div class="col-md-6 col-md-offset-2" id="gameGo">
+                <button class="btn btn-primary" class="pulse" id="rock" type="submit">
+                  <div><img src="../public/Images/rock.png" id="rock" alt="Rock"></div>
+                  <!--<div><img src="images/rockbroke.png" id="rockBroke" alt="Rock"></div>-->
+                </button>
+                <button class="btn btn-primary" id="paper" type="submit">
+                  <div><img src="../public/Images/paperbasic.png" id="paper" alt="Paper"></div>
+                  <!--<div><img src="images/paperrip.png" id="paperRip" alt="Paper"></div>-->
+                </button>
+                <button class="btn btn-primary" id="scissor" type="submit">
+                <div><img src="../public/Images/scissoropen.png" id="scissorOpen" alt="Scissor"></div>
+                <!--<div><img src="images/scissorsclose.png" id="scissorClose" alt="Scissor"></div>-->
+                </button>
+               <button class="btn btn-primary" id="lizard" type="submit">Lizard</button>
+                <button class="btn btn-primary" id="spock" type="submit">Spock</button> 
+            </div>
+        </div>
+        <div class="row" id="gameCounter">
+            <div class="col-md-4 col-md-offset-1">
+                <ul style="list-style-type:none">
+                  <li><strong>Your Score: </strong><span id="userScore">0</span><button class="btn btn-info btn-block" data-tag="userScore">Increment User Score</button></li>
+                  <li><strong>Machine Score: </strong><span id="computerScore">0</span><button class="btn btn-info btn-block" data-tag="computerScore">Increment Computer Score</button></li>
+                  <li><strong>Round Count: </strong><span id="roundCount">1</span><button class="btn btn-info btn-block" data-tag="roundCount">Increment Round Count</button></li>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" id="directions">
+                <p>Directions: Welcome to Rock, Paper, Scissor Your opponent is the machine (aka your computer).</p>
+                <ul>
+                    <li>Scissors cuts Paper</li>
+                    <li>Paper Covers Rock</li>
+                    <!-- <li>Rock Crushes Lizard</li>
+                    <li>Lizards Poisons Spock</li>
+                    <li>Spock Smashes Scissors</li>
+                    <li>Scissors Decapitates Lizard</li>
+                    <li>Lizard Eats Paper</li>
+                    <li>Paper Disproves Spock</li>
+                    <li>Spock Vaporizes Rocks</li> -->
+                    <li>Rock Crushes Scissors</li>
+                </ul>
+                <button class="btn btn-info" id="go" type="submit">Great, Let's Go</button>
+            </div>
+            <div class="col-md-8">
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Game Alert</h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../public/js/rpsbuttons.js"></script>
+         <script type="text/javascript" src="../public/js/rpsgameLogic.js"></script>
+        <script type="text/javascript" src="../public/js/rpsscoreTracker.js"></script>
+        <script type="text/javascript" src="../public/js/rpsnavAnimated.js"></script>
+        <!-- <script type="text/javascript" src="js/animation.js"></script>-->
+        
+</body>
+
+</html>

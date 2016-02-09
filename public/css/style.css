@@ -62,6 +62,9 @@ h5 {
 h6 {
   font-family: 'Pacifico', cursive;
 }
+#blog {
+  font-size: 85%;
+}
 .rw-wrapper{
   width: 80%;
   position: relative;
