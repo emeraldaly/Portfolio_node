@@ -15,16 +15,28 @@ app.get("/", function(req, res) {
 
 });
 
-app.get("/AboutMe", function(req, res) {
-  res.sendFile(process.cwd() + "/views/AboutMe.html")
-});
-
 app.get("/blog", function(req, res)  {
   res.sendFile(process,cwd() + "/views/blog.html");
 });
 
 app.get("/projects", function(req, res)  {
   res.sendFile(process,cwd() + "/views/projects.html");
+});
+
+app.get("/game", function(req, res) {
+  res.sendFile(process.cwd() + "/views/game.html")
+});
+
+app.get("/rps", function(req, res) {
+  res.sendFile(process.cwd() + "/views/rps.html")
+});
+
+app.get("/clickface", function(req, res) {
+  res.sendFile(process.cwd() + "/views/clickface.html")
+});
+
+app.get("/register", function(req, res) {
+  res.sendFile(process.cwd() + "/views/register.html")
 });
 
 app.get('/dashboard/:githubname', function(req, res) {
