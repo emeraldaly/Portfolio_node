@@ -1,0 +1,30 @@
+{
+  "name": "alysonwrightportfolio",
+  "version": "1.0.0",
+  "description": "Alyson Wright",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "^1.14.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emeraldaly/Portfolio_node.git"
+  },
+  "keywords": [
+    "portfolio",
+    "game",
+    "about",
+    "experience"
+  ],
+  "author": "Alyson Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emeraldaly/Portfolio_node/issues"
+  },
+  "homepage": "https://github.com/emeraldaly/Portfolio_node#readme"
+}
