@@ -1,0 +1,64 @@
+body {
+  background-color: teal;
+  background-image: url("../images/subtle_white_transp.png")
+}
+#nav {
+  background-color: #ffccbc;
+
+}
+#typewriter {
+  height: 100px;
+}
+#side {
+  background-color: #ef9a9a;
+
+}
+#top {
+  background-color: #fff3e0;
+}
+#promo {
+  background-color: #e0f7fa;
+}
+
+.profilePic {
+    height: 100px;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8em;
+}
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.25em;
+  }
+h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 1.75em
+}
+h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.375em;
+}
+h4
+{
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.125em;
+  text-align: center;
+}
+li {
+  font-family: 'Arimo', sans-serif;
+  font-size: .75em;
+}
+h5 {
+  font-family: 'Bangers', cursive;
+}
+h6 {
+  font-family: 'Pacifico', cursive;
+}
+
+a:link { color: #333399; background-color: transparent; text-decoration: none}
+a:visited { color: #cc3366 ; background-color: transparent;text-decoration: none }
+a:focus { color: #006699 ; background-color: transparent;text-decoration: underline}
+a:hover { color: #009999; background-color: transparent;text-decoration: underline}
+a:active { color: #990000; background-color: transparent;text-decoration: underline}
+
