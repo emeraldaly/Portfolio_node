@@ -1,49 +1,104 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../public/css/clickgame.css">
-<link href="normalize.css" type="text/css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
+<html>
 <head>
-    <meta name="viewport" content="width=device-width"> 
-    <title>Click that Female Comedian</title>
-   <h1>Click that Female Comedian</h1>
+
+  <link rel="stylesheet" type="text/css" href="../public/css/clickgame.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>"Comedian Clicks"</title>
+
 </head>
 
 <body>
-    <button class="btn btn-info" onclick="countdown()">Click to play</button> 
-    <section class="container-fluid">
-        <p>Click as many women comedians in 20 seconds as you can. No repeats!</p>
-        <section class="row">
-          <div class="col-lg-12 col-md-3 col-xs-12">
-              <img src="http://listverse.wpengine.netdna-cdn.com/wp-content/uploads/2008/10/lucille-ball.jpg.gif" alt="Lucille Ball" onclick="countup(); this.onclick=null">
-              <img src="https://zeldaandscout.files.wordpress.com/2015/01/leslie-jones.jpg" alt="Leslie Jones" onclick="countup(); this.onclick=null">
-              <img src="https://s-media-cache-ak0.pinimg.com/236x/af/5b/ac/af5bac062febf09e224b34301604f9e8.jpg" alt="Kristen Schaal" onclick="countup(); this.onclick=null">
-              <img src="http://ia.media-imdb.com/images/M/MV5BMjE2MDkxNjE1NV5BMl5BanBnXkFtZTgwNjQ3MzUwMzE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" img="Kate Micucci" onclick="countup(); this.onclick=null">
-              <img src="http://www.vogue.com/wp-content/uploads/2014/08/amy-schumer-female-comedian_175744340635.jpg" img="Amy Schumer" onclick="countup(); this.onclick=null">
-              <img src="http://www.tuxboard.com/photos/2014/08/Julia-Louis-Dreyfus.jpg" img="Louis Dreyfus" onclick="countup(); this.onclick=null">
-              <img src="https://media.livenation.com/artists/78352/78352-tap-67025.jpg?1374692022" img="Kathy Griffin" onclick="countup(); this.onclick=null">
-              <img src="http://www.glamour.com/images/entertainment/2013/03/mindy-kaling-cover-square-w352.jpg" img="Mindy Kaling" onclick="countup(); this.onclick=null">
-              <img src="http://www-tc.pbs.org/weta/finding-your-roots/files/2014/07/Tina-Fey-Headshot-3519_Retouched_Flat_Cropped.jpg" img="Tina Fey" onclick="countup(); this.onclick=null">
-              <img src="https://pmcdeadline2.files.wordpress.com/2011/03/mayarudolph_20110325183227.jpg" img="Maya Rudolph" onclick="countup(); this.onclick=null">
-              <img src="http://cdn2-www.afterellen.com/assets/uploads/images/021810wiig1.jpg" img="Kristen Wiig" onclick="countup(); this.onclick=null">
-              <img src="http://images.lifeandstylemag.com/uploads/posts/image/51751/melissa-mccarthy-3.jpg" img="Melissa McCarthy" onclick="countup(); this.onclick=null">
-              <img src="http://2.bp.blogspot.com/_y1USaJemzSs/TNy9Er89pkI/AAAAAAAAFoI/jELJ1U9nPp0/s1600/jenny-slate.jpg" img="Jenny Slate" onclick="countup(); this.onclick=null">
-              <img src="http://ia.media-imdb.com/images/M/MV5BMTM2NzI3NTU5Nl5BMl5BanBnXkFtZTcwODkxODAwNA@@._V1_UY317_CR10,0,214,317_AL_.jpg" img= "Sarah Silverman" onclick="countup(); this.onclick=null">
-              <img src="http://hgtvhome.sndimg.com/content/dam/images/hgtv/editorial/profiles/talent/ellen-degeneres/hgtv-avatar-talent-ellen-degeneres-3.jpg.rend.hgtvcom.616.616.jpeg" img="Ellen Degeneres" onclick="countup(); this.onclick=null">
-             <img src="http://images.amcnetworks.com/wetv.com/wp-content/uploads/2013/09/jkb_joan_rivers_bio_460x460.jpg" img="Joan Rivers" onclick="countup(); this.onclick=null">
-             <img src="http://cdn04.cdn.justjared.com/wp-content/uploads/2009/04/poehler-parks/amy-poehler-parks-and-recreation-21.jpg" img="Amy Poehler" onclick="countup(); this.onclick=null">
-             <img src="http://i2.cdn.turner.com/cnn/dam/assets/130801162340-janeane-garofalo-comedian-entertain-feature.jpg" img="Janeane Garofalo" onclick="countup(); this.onclick=null">
-             <img src="http://s3.amazonaws.com/media.wbur.org/wordpress/11/files/2015/04/0414_cecily-strong.jpg" img="Celia Strong" onclick="countup(); this.onclick=null">
-             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Riki_Lindhome_2013_WonderCon_(cropped).jpg" img="Rikki Lindhome" onclick="countup(); this.onclick=null">
-          </div>
-              <script type="text/javascript" src="../public/js/clickgame.js"></script>
+  <div class="container-fluid">
+    <h2>
+      Push the button to start.
+    </h2>
+    <button class="btn btn-info" type="submit"><a href=game.html>Return to Game Page</a></button>
+    <br />
+    <div class="col-xs-12 col-sm-2">
+      <table class="table timer">
+        <tr>
+          <td>
+            <h4>Time</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 id="runningTime">20</h2>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <h5>
+        Click as many comedians as possible in 20 seconds:
+      </h5>
 
-        </section>
-    </section>
+      <button class="btn btn-success active" id="start" onclick="timecount()">Push to start</button>
+      <button class="btn btn-danger active" id="stop" onclick="stopgame()">Push to reset</button>
+    </div>
+  </div>
+
+  <!-- choosing all square images definitely comes in handy for formatting at once! -->
+  <div class="col-xs-12 col sm-10">
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="http://listverse.wpengine.netdna-cdn.com/wp-content/uploads/2008/10/lucille-ball.jpg.gif" alt="Lucille Ball"></button>
+      <button class="btn btn-default clique">
+        <img src="https://zeldaandscout.files.wordpress.com/2015/01/leslie-jones.jpg" alt="Leslie Jones"></button>
+      <button class="btn btn-default clique">
+        <img src="https://s-media-cache-ak0.pinimg.com/236x/af/5b/ac/af5bac062febf09e224b34301604f9e8.jpg" alt="Kristen Schaal"></button>
+      <button class="btn btn-default clique">
+        <img src="http://ia.media-imdb.com/images/M/MV5BMjE2MDkxNjE1NV5BMl5BanBnXkFtZTgwNjQ3MzUwMzE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" alt="Kate Micucci"></button>
+      <button class="btn btn-default clique">
+        <img src="http://www.vogue.com/wp-content/uploads/2014/08/amy-schumer-female-comedian_175744340635.jpg" alt="Amy Schumer"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="http://www.tuxboard.com/photos/2014/08/Julia-Louis-Dreyfus.jpg" alt="Louis Dreyfus"></button>
+      <button class="btn btn-default clique">
+        <img src="https://media.livenation.com/artists/78352/78352-tap-67025.jpg?1374692022" alt="Kathy Griffin"></button>
+      <button class="btn btn-default clique">
+        <img src="http://www.glamour.com/images/entertainment/2013/03/mindy-kaling-cover-square-w352.jpg" alt="Mindy Kaling"></button>
+      <button class="btn btn-default clique">
+        <img src="http://www-tc.pbs.org/weta/finding-your-roots/files/2014/07/Tina-Fey-Headshot-3519_Retouched_Flat_Cropped.jpg" alt="Tina Fey"></button>
+      <button class="btn btn-default clique">
+        <img src="https://pmcdeadline2.files.wordpress.com/2011/03/mayarudolph_20110325183227.jpg" alt="Maya Rudolph"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="http://cdn2-www.afterellen.com/assets/uploads/images/021810wiig1.jpg" alt="Kristen Wiig"></button>
+      <button class="btn btn-default clique">
+        <img src="http://images.lifeandstylemag.com/uploads/posts/image/51751/melissa-mccarthy-3.jpg" alt="Melissa McCarthy"></button>
+      <button class="btn btn-default clique">
+        <img src="http://2.bp.blogspot.com/_y1USaJemzSs/TNy9Er89pkI/AAAAAAAAFoI/jELJ1U9nPp0/s1600/jenny-slate.jpg" alt="Jenny Slate"></button>
+      <button class="btn btn-default clique">
+        <img src="http://ia.media-imdb.com/images/M/MV5BMTM2NzI3NTU5Nl5BMl5BanBnXkFtZTcwODkxODAwNA@@._V1_UY317_CR10,0,214,317_AL_.jpg" alt="Sarah Silverman"></button>
+      <button class="btn btn-default clique">
+        <img src="http://hgtvhome.sndimg.com/content/dam/images/hgtv/editorial/profiles/talent/ellen-degeneres/hgtv-avatar-talent-ellen-degeneres-3.jpg.rend.hgtvcom.616.616.jpeg" alt="Ellen DeGeneres"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="http://images.amcnetworks.com/wetv.com/wp-content/uploads/2013/09/jkb_joan_rivers_bio_460x460.jpg" alt="Joan Rivers"></button>
+      <button class="btn btn-default clique" id="face">
+        <img src="http://cdn04.cdn.justjared.com/wp-content/uploads/2009/04/poehler-parks/amy-poehler-parks-and-recreation-21.jpg" alt="Amy Poehler"></button>
+      <button class="btn btn-default clique">
+        <img src="http://i2.cdn.turner.com/cnn/dam/assets/130801162340-janeane-garofalo-comedian-entertain-feature.jpg" alt="Janeane Garofalo"></button>
+      <button class="btn btn-default clique">
+        <img src="http://s3.amazonaws.com/media.wbur.org/wordpress/11/files/2015/04/0414_cecily-strong.jpg" alt="Celia Strong"></button>
+      <button class="btn btn-default clique">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Riki_Lindhome_2013_WonderCon_(cropped).jpg" alt="Rikki Lindhome"></button>
+    </div>
+    
+
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="../public/js/clickgame.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
-
 </html>
