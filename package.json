@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.6.0"
+  },  
   "description": "Alyson Wright",
   "main": "server.js",
   "dependencies": {
