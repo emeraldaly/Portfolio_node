@@ -7,7 +7,7 @@ var mysql = require('mysql');
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-app.use(express.static('publc'));
+app.use(express.static('public'));
 // app.use("/public/css", express.static("css"));
 // app.use("/public/images", express.static("images"));
 
