@@ -1,7 +1,7 @@
 var express = require("express");
 var BodyParser = require("body-parser");
 var mysql = require('mysql');
-var expressHandlebars = require('');
+//var expressHandlebars = require('');
 // var GitHubApi = require('node-github');
 
 var app = express();
