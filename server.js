@@ -7,8 +7,8 @@ var mysql = require('mysql');
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-app.use("/js", express.static("public/js"));
-app.use("/css", express.static("public/css"));
+app.use("public/js", express.static("js"));
+app.use("public/css", express.static("css"));
 
 app.use(BodyParser.urlencoded({extended: false}));
 
