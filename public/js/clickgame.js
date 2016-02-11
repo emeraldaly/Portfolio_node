@@ -11,7 +11,7 @@
      
 //      }, 20000);
 // }
-var players = document.getElementsByClassName("clique");
+var players = document.getElementsByClassName("comedians");
 var score = 0;
 var startTime = document.getElementById('start');
 var resetGame = document.getElementById('stop');
