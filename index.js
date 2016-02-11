@@ -1,6 +1,8 @@
 var express = require("express");
 var BodyParser = require("body-parser");
-var GitHubApi = require('node-github');
+var mysql = require('mysql');
+var expressHandlebars = require('');
+// var GitHubApi = require('node-github');
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -39,18 +41,19 @@ app.get("/register", function(req, res) {
   res.sendFile(process.cwd() + "/views/register.html")
 });
 
-app.get('/dashboard/:githubname', function(req, res) {
-  var github = new GitHubApi({
-    version: "3.0.0"
-    });
-  console.log(req.params.githubname)
-github.user.getFrom({
-      user: req.params.githubname
-  }, function(err, gitResponse){
-    // console.log(gitResponse);
-      res.send(JSON.stringify(gitResponse))
-  });
-});
+
+// app.get('/dashboard/:githubname', function(req, res) {
+//   var github = new GitHubApi({
+//     version: "3.0.0"
+//     });
+//   console.log(req.params.githubname)
+// github.user.getFrom({
+//       user: req.params.githubname
+//   }, function(err, gitResponse){
+//     // console.log(gitResponse);
+//       res.send(JSON.stringify(gitResponse))
+//   });
+// });
 
 app.listen(PORT, function() {
   console.log("App listening on port %s", PORT);
