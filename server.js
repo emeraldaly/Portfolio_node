@@ -19,11 +19,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/blog", function(req, res)  {
-  res.sendFile(process,cwd() + "/views/blog.html");
+  res.sendFile(process.cwd() + "/views/blog.html");
 });
 
 app.get("/projects", function(req, res)  {
-  res.sendFile(process,cwd() + "/views/projects.html");
+  res.sendFile(process.cwd() + "/views/projects.html");
 });
 
 app.get("/game", function(req, res) {
