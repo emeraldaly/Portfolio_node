@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Alyson Wright",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
     "body-parser": "^1.14.2"
